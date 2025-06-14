@@ -22,3 +22,28 @@ h1 {
 .container {
     text-align: center;
 }
+
+.kit {
+    padding: 30px 50px;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.kit:hover {
+    color: black;
+}
+
+/* .kit:active {
+    background-size: 105%;
+} */
