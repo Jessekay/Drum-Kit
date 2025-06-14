@@ -44,6 +44,18 @@ h1 {
     color: black;
 }
 
-/* .kit:active {
+.pressed {
+    background-color: cadetblue;
+    color: white;
+}
+
+.kit:active {
     background-size: 105%;
-} */
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    color: white;
+}
