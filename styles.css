@@ -1,35 +1,24 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background-color: white;
     font-family: Arial, sans-serif;
+    background-color: cadetblue;
 }
 
-.drum-kit {
-    display: grid;
-    grid-template-columns: repeat(7, 100px);
-    gap: 10px;
-}
-
-.drum {
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
+h1 {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    border-radius: 10px;
-    cursor: pointer;
-    user-select: none;
-    transition: tranform 0.1s, background-color 0.1s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
 }
 
-.drum.pressed {
-    transform: scale(0.9);
-    background-color: aquamarine;
+.container {
+    text-align: center;
 }
