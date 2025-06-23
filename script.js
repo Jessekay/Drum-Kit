@@ -9,11 +9,19 @@ const SOUND_MAP = {
   l: "./sounds/tom-4.mp3"
 };
 
-// listening a key that is pressed on the keyboard
-document.addEventListener("keydown", function(event) {
-    playSound(event.key);
-    animateBtn(event.key);
-});
+// === Initialize Drum Kit Event Listeners ===
+const initDrumKit = () => {
+  // Keyboard listener
+  document.addEventListener("keydown", ({ key }) => handleInteraction(key));
+
+  // Mouse click listener
+  document.querySelectorAll(".kit").forEach(button =>
+    button.addEventListener("click", () => {
+      const key = button.innerHTML.toLowerCase();
+      handleInteraction(key);
+    })
+  );
+};
 
 // listening when clicked using mouse
 const kitButtons = document.querySelectorAll(".kit");
