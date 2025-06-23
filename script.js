@@ -1,12 +1,12 @@
-// key maps
-const soundMap = {
-    w: "./sounds/crash.mp3",
-    a: "./sounds/kick-bass.mp3",
-    s: "./sounds/snare.mp3",
-    d: "./sounds/tom-1.mp3",
-    j: "./sounds/tom-2.mp3",
-    k: "./sounds/tom-3.mp3",
-    l: "./sounds/tom-4.mp3"
+// === Drum Kit Sound Map ===
+const SOUND_MAP = {
+  w: "./sounds/crash.mp3",
+  a: "./sounds/kick-bass.mp3",
+  s: "./sounds/snare.mp3",
+  d: "./sounds/tom-1.mp3",
+  j: "./sounds/tom-2.mp3",
+  k: "./sounds/tom-3.mp3",
+  l: "./sounds/tom-4.mp3"
 };
 
 // listening a key that is pressed on the keyboard
