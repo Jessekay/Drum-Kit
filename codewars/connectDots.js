@@ -14,4 +14,12 @@ function connectTheDots(paper) {
     }
 
     let keys = Object.keys(dots).sort();
+
+    function drawLine(from, to) {
+        let dx = Math.sign(to.x - from.x);
+        let dy = Math.sign(to.y - from.y);
+
+        let x = from.x;
+        let y = from.y;
+    }
 }
