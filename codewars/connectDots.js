@@ -21,5 +21,21 @@ function connectTheDots(paper) {
 
         let x = from.x;
         let y = from.y;
+
+        while (x !== to.x || y !== to.y) {
+            x +=dx;
+            y += dy;
+
+            if (grid[y][x] === ' ') {
+                grid[y][x] = '*';
+            }
+        }
     }
+
+    for (let i = 0; i < keys.length -1; i++) {
+        const from = dots[keys[i]];
+        const to = dots[keys[i + 1]];
+        drawLine(from, to);
+    }
+    return grid.map(row => row.join('')).join('\n');
 }
