@@ -12,4 +12,6 @@ function connectTheDots(paper) {
             }
         }
     }
+
+    let keys = Object.keys(dots).sort();
 }
