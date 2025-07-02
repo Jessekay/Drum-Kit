@@ -1,14 +1,9 @@
 function removeExclamatioMark(s) {
-    let result = '';
-
-    for (i = 0; i < s.length; i++) {
-        if (s[i] !== "!") {
-            result += s[i];
-        }
-    }
-
-    return result;
+   while (s.includes("!")) {
+    s = s.replace("!", "");
+   }
+   return s;
 }
 
-const hello = "hello world!!";
+const hello = "mama mia!!";
 console.log(removeExclamatioMark(hello));
