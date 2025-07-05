@@ -7,5 +7,7 @@ function removeFirstAndLast(str) {
 
     const middle = parts.slice(1, -1);
 
-    
+    return middle.join(" ");
 }
+
+console.log(removeFirstAndLast("1,2,3"));
