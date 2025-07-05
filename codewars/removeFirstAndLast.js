@@ -5,5 +5,7 @@ function removeFirstAndLast(str) {
         return null;
     }
 
+    const middle = parts.slice(1, -1);
+
     
 }
