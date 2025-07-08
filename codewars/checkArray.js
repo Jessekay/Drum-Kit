@@ -1,10 +1,5 @@
 function checkArray(a, x) {
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] === x) {
-            return true;
-        } 
-    }
-    return false;
+    return a.includes(x);
 }
 
-console.log(checkArray([1,2,3],2));
+console.log(checkArray([1,2,3],5));
