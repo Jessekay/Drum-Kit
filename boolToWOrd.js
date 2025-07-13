@@ -1,11 +1,5 @@
 function boolToWord(bool) {
-        if (bool == true) {
-            return "yes";
-        } else if (bool != true){
-            return "no";
-        }
-    
-    return bool;
+   return bool ? "yes" : "no";
 }
 
-console.log(boolToWord(true));
+console.log(boolToWord(false));
