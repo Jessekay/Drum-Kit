@@ -1,9 +1,5 @@
 function move(position, roll) {
-    let stepsToMove = roll * 2;
-
-    let newPosition = position + stepsToMove;
-
-    return newPosition;
+return position + roll * 2;
 }
 console.log(move(3, 6)); // Output: 15
 console.log(move(0, 2)); // Output: 4
