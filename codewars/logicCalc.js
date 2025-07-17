@@ -1,9 +1,19 @@
 function logicalCalc(array, operator) {
-    if (operator === "AND") {
-        return array.every(val => val);
-    } else if (operator === "OR") {
-        return array.some(val => val);
-    } else if (operator === "XOR") {
-        return array.reduce((acc, val) => acc !== val, false);
+    let result = array[0]; // Start with the first value
+
+    for (let i = 1; i < array.length; i++) {
+        switch (operator) {
+            case "AND":
+                result = result && array[i];
+                break;
+            case "OR":
+                result = result || array[i];
+                break;
+            case "XOR":
+                result = result !== array[i];
+                break;
+        }
     }
+
+    return result;
 }
