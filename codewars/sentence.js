@@ -5,7 +5,7 @@ const sentenceReversing = (sentence) => {
     for (let i = words.length; i >= 0; i--) {
         reversedSentence.push(words[i]);
     }
-    const reversed = reversedSentence.join("");
+    const reversed = reversedSentence.join(" ");
     return reversed;
 }
 
