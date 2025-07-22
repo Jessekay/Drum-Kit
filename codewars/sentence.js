@@ -1,4 +1,4 @@
-function sentenceReversing(sentence) {
+const sentenceReversing = (sentence) => {
     const words = sentence.split(" ");
     let reversedSentence = [];
 
