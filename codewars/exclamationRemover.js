@@ -1,9 +1,13 @@
 function removeExclamation(s) {
-    while (s.includes("!")) {
-        s = s.replace("!", "");
+    let result = '';
+
+    for (i = 0; i < s.length; i++) {
+        if(s[i] !== "!") {
+            result += s[i];
+        }
     }
-    return s;
+    return result;
 }
 
-const hello = "mama mia!";
+const hello = "Hello World!";
 console.log(removeExclamation(hello));
