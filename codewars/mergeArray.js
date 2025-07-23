@@ -8,6 +8,17 @@ function mergeAndSortUnique(arr1, arr2) {
         }
     }
 
+    for (let i = 0; i < uniqueArr.length; i++) {
+        for (let j = i; j < uniqueArr.length; j++) {
+            if(uniqueArr[i] > uniqueArr) {
+                let temp = uniqueArr[i];
+                uniqueArr[i] = uniqueArr[j];
+                uniqueArr[j] = temp;
+            }
+        }
+    }
+    return uniqueArr;
+
 }
 
 
